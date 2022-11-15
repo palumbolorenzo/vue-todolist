@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color {
+    color: rgb(8, 176, 103);
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
