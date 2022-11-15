@@ -30,18 +30,18 @@
             </div>
 
             <div class="new-todo">
-                <input @keyup.enter.space="addTodo" type="text" placeholder="aggiungi" v-model="newTodo">
+                <input @keyup.enter="addTodo" type="text" placeholder="aggiungi" v-model="newTodo">
                 <button @click="addTodo" class="btn btn-dark">Aggiungi</button>
             </div>
 
             <div class="todos-container">
                 <ul v-if="todos.length !== 0">
                     <li v-for="(todo, i) in todos" :key="todo" class="todo">
-                        <span :style="todo.done == false ? {textDecoration: 'line-through'} : ''">{{ todo }}</span>
-                        <i class="fas fa-times" @click="deleteTodo(i)"></i>
+                        <span class="testo" :style="todo.done == false ? {textDecoration: 'line-through'} : ''">{{ todo }}</span>
+                        <i class="fas fa-times x" @click="deleteTodo(i)"></i>
                     </li>
                 </ul>
-                <h2 v-else=>Non hai cose da fare</h2>
+                <h2 v-else>Non hai cose da fare</h2>
             </div>
         </div>
     </main>

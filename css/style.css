@@ -40,9 +40,23 @@ ul {
 }
 
 .todo {
-    color: rgb(200, 200, 200);
+    color: #E7E7E7;
     width: 300px;
-    border-bottom: 2px solid rgb(200, 200, 200);
+    border-bottom: 2px solid #E7E7E7;
     display: flex;
     justify-content: space-between;
+}
+
+.testo:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+h2 {
+    color: #E7E7E7;
+}
+
+.x:hover {
+    color: red;
+    cursor: pointer;
 }

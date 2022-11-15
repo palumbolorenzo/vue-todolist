@@ -31,8 +31,10 @@ new Vue (
         },
         methods: {
             addTodo() {
-                this.todos.push(this.newTodo);
-                this.newTodo = '';
+                if (this.newTodo.trim()){
+                    this.todos.push(this.newTodo.trim());
+                    this.newTodo = '';
+                }
             },
             deleteTodo(index){
                 this.todos.splice(index, 1);
